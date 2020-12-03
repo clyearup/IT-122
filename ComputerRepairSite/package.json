@@ -1,7 +1,7 @@
 {
-  "name": "express_website",
+  "name": "computerrepairsite",
   "version": "1.0.0",
-  "description": "Simple_Website",
+  "description": "Computer Repair Site IT-122 Project",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,9 +9,8 @@
   "author": "Christopher Luhrman",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "*",
-    "express": "*",
-    "jade": "*",
-    "nodemailer": "*"
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "nodemailer": "^6.4.16"
   }
 }
