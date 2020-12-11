@@ -5,9 +5,37 @@ const app = express();
 app.use(express.json()); // adding middleware to parse JSON objects
 
 const albums = [
-    {id: 1, albumTitle: '', artist: '', trackList: '', genre: '', YOR: ''},
-    {id: 2, albumTitle: '', artist: '', trackList: '', genre: '', YOR: ''},
-    {id: 3, albumTitle: '', artist: '', trackList: '', genre: '', YOR: ''}
+    {id: 1, 
+        albumTitle: 'A Drummer Boy Christmas', 
+        artist: 'KING & COUNTRY',
+        trackList: 'In The Bleak Midwinter (Prologue)'
+            + 'Joy To The World' 
+            + 'O Come, O Come Emmanuel'
+            + 'Won\'t You Come'
+            + 'Heavenly Hosts'
+            + 'Silent Night', 
+        genre: 'Christmas', 
+        YOR: 'October 2, 2020'},
+    {id: 2, 
+        albumTitle: 'Starting Over', 
+        artist: 'Chris Stapleton', 
+        trackList: 'Starting Over' 
+        + 'Devil Always Made Me Think Twice'
+        + 'Cold'
+        + 'When I\'m With You'
+        + 'Arkansas',  
+        genre: 'Country?', 
+        YOR: 'August 27, 2020'},
+    {id: 3, 
+        albumTitle: 'POWER UP', 
+        artist: 'AC/DC',
+        trackList: 'Realize'
+        + 'Rejection'
+        + 'Shot In The Dark'
+        + 'Through The Mists Of Time'
+        + 'Kick You When You\'re Down', 
+        genre: 'Metal', 
+        YOR: 'October 7, 2020'}
 ];
 
 app.get('/', (req,res) => {
